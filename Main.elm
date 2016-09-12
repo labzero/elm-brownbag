@@ -14,6 +14,12 @@ aTuple = (12, "foo")
 
 myFunc = \x -> x + 1
 
+myRecord = 
+  {
+    name = "John Doe"
+  , address = "123 Main St."
+  }
+
 item x = 
   li [] [text x]
 
@@ -26,4 +32,5 @@ main =
     , item (toString anotherList)
     , item (toString aTuple)
     , item (toString (myFunc aNumber))
+    , item (toString myRecord)    
     ]
