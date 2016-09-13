@@ -3,6 +3,7 @@ module Main2 exposing (main)
 import Html.App as App
 import Html exposing (..)
 import Html.Events exposing (..)
+import Html.Attributes exposing (..)
 
 type alias Model = 
   {
@@ -21,6 +22,7 @@ type Msg
   = Increment
   | Decrement
   | UpdateFieldContents String
+  | ClearField
 
 view : Model -> Html Msg
 view model = div [] 
@@ -30,8 +32,9 @@ view model = div []
   , button [onClick Decrement] [text "-"]
   , div [] 
     [
-      input [onInput UpdateFieldContents] [text model.fieldContents]
+      input [onInput UpdateFieldContents, value model.fieldContents] []
     , div [] [text model.fieldContents]
+    , button [onClick ClearField] [text "Clear"]
     ]
   ]
 
@@ -42,6 +45,7 @@ update msg model =
     Decrement -> {model | counter = model.counter - 1}
     UpdateFieldContents str ->
       {model | fieldContents = str}
+    ClearField -> {model | fieldContents = ""}
     
 main = 
   App.beginnerProgram { model = model, view = view, update = update}
