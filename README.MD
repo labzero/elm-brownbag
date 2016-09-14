@@ -14,5 +14,7 @@ Install however you generally install editor packages.
 
 ## Hello World!
 
+- run `elm-reactor` from the root of the this project
+- point your browser at http://localhost:8000/Main.elm
 
 
