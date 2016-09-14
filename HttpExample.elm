@@ -1,5 +1,10 @@
+-- # for placeholder API backend
 -- npm install -g json-server
 -- /usr/local/bin/json-server http://jsonplaceholder.typicode.com/db
+
+-- # to run with elm-live
+-- npm install -g elm-live
+-- elm-live --port=9000 HttpExample.elm --output posts.js
 
 module HttpExample exposing (..)
 
