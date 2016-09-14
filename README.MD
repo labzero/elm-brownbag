@@ -9,7 +9,7 @@ Install however you generally install editor packages.
   - [Atom](https://atom.io/packages/language-elm)
   - [Vim](https://github.com/lambdatoast/elm.vim)
 
-- run `elm-package install elm-lang/html -y` to get some standard packges you will need to do anything interesting
+- run `elm package install elm-lang/html -y && elm package install evancz/elm-http -y` to get some standard packges you will need to do anything interesting
 
 
 ## Hello World!
