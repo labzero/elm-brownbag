@@ -17,4 +17,6 @@ Install however you generally install editor packages.
 - run `elm-reactor` from the root of the this project
 - point your browser at [http://localhost:8000/Main.elm](http://localhost:8000/Main.elm)
 
+For more Elm fun, go to this repo's [wiki](https://github.com/svoynow/elm-brownbag/wiki/Getting-Started)
+
 
