@@ -1,7 +1,9 @@
 
 ## Install
 
-- [Elm](http://install.elm-lang.org/Elm-Platform-0.17.1.pkg)
+- Elm (2 options)   
+  - [Mac OS installer](http://install.elm-lang.org/Elm-Platform-0.17.1.pkg)
+  - via npm `npm install -g elm`
 - Elm support for your editor of choice. Getting quick feedback from the compiler is key.
 Install however you generally install editor packages.
   - [Sublime](https://packagecontrol.io/packages/Elm%20Language%20Support)
